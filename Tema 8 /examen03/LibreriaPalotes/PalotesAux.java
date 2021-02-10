@@ -30,7 +30,11 @@ public class PalotesAux {
   public static String EnteroAPalotes (int a) {
     String resultado = "";
     int digito;
-    a = (a>0)?a:-a;
+    if(a>0){
+      a=a;
+    }else{
+      a=-a;
+    }
     while (a>0) {
       digito = a % 10;
       a = a /10;
@@ -44,6 +48,5 @@ public class PalotesAux {
     return resultado;
   }
 }
-
 
 
